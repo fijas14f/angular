@@ -1,0 +1,19 @@
+<p>todolist works!</p>
+<div class="row">
+  <div class="col-sm-6">
+    <h2><u>TODO</u></h2>
+  <input type="text" name="" id="task" class="form-control" (input)="addtask($event)">
+  <ul>
+    <li *ngFor="let a of todo">{{a}}
+      <button (click)="removearray()">remove</button>
+    </li>
+    
+  </ul>
+  <button (click)="add()">click</button>
+  </div>
+</div>
+<div class="col-sm-6">
+  <h2><u>TOMARROW</u></h2>
+  <div id="tmr"></div>
+
+</div>
